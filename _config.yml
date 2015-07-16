@@ -18,8 +18,8 @@ description: 学习记录
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
-favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+avatar: http://imgsrc.baidu.com/forum/w%3D580/sign=b0847c3fd00735fa91f04eb1ae500f9f/3eb69e39b6003af3211b0244312ac65c1138b6d2.jpg
+favicon: http://www.jianbihua.cc/uploads/allimg/140216/2-1402161Q401S6.jpg
 
 # google analytics 设置
 ga:
@@ -27,4 +27,4 @@ ga:
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: kevin-zh
