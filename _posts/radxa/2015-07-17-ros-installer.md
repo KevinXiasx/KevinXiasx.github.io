@@ -9,7 +9,8 @@ description:
 
 
 # ROS Jade在Rock2 square上的安装 
-	本文将介绍如何在Rock2 square的Ubuntu系统安装ROS系统，其他关于ROS的介绍和教程请登录[ROSwiki](http://wiki.ros.org/)  
+
+	本文将介绍如何在Rock2 square的Ubuntu系统安装ROS系统，其他关于ROS的介绍和教程请登录http://wiki.ros.org  
 
 ## 配置环境  
 
