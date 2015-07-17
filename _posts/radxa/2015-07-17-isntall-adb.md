@@ -39,7 +39,7 @@ description:
 
 * 现在，我们使用以下命令就可以看到类似这样的一些连接信息  
 	`sudo adb devices`  
-	`16EM8TBH0Z  device` 
+	> 16EM8TBH0Z  device
 
 连接成功 ！ 
 
