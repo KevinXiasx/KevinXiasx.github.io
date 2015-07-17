@@ -65,7 +65,7 @@ description:
 
 ## 获取rosinstall
 
-rosinstall是经常被使用的命令行工具，它能让你使用一行命令就下载好组件的源码，使用下面命令安装  
+rosinstall是经常被使用的命令行工具，它能让你使用一行命令就下载好组件，使用下面命令安装  
 
 	`sudo apt-get install python-rosinstall`  
 
