@@ -9,7 +9,8 @@ description:
 
 # 烧录ROCK SD卡启动镜像  
 
-首先要下载或者制作一个从SD卡启动的镜像，下载可以从http://dl.radxa.com/，制作可以参考本github中的其他文档，或者访问Radxa的官网http://radxa.com  
+首先要下载或者制作一个从SD卡启动的镜像，下载可以从(http://dl.radxa.com/)  
+制作可以参考本github中的其他文档，或者访问Radxa的官网http://radxa.com  
 **（注意：rock lite从SD卡启动的android镜像只能由Windows平台烧录）**  
 
 ## Windows下操作  
@@ -18,7 +19,7 @@ description:
 
 * 下载[Win32DiskImager](http://sourceforge.net/projects/win32diskimager/files/latest/download)  
 * 使用工具将镜像写入SD卡中  
-![image][http://radxa.com/mw/images/3/38/Win32DiskImager.png]  
+![image](http://radxa.com/mw/images/3/38/Win32DiskImager.png)  
 
 ## Linux  
 
