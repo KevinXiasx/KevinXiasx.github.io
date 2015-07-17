@@ -77,10 +77,18 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
   `find . ! -path "./.git*"  | cpio -H newc  -ov > initrd.img`  
   此时，在当前文件夹下，就会生成一个initrd.img的文件  
   
-获取打包工具mkbooting  
+* 获取打包工具mkbooting  
 `wget  http://dl.radxa.com/rock/tools/linux/mkbootimg`  
 `sudo apt-get install lib32stdc++6`  
 `hmod +x mkbootimg`  
+
+* 进行打包，具体路径根据你的当前路径确定  
+  `./mkbootimg --kernel linux-rockchip/arch/arm/boot/Image --ramdisk initrd.img -o boot.img`  
+  完成。现在已经生成了RR的“boot.img”文件了。 
+
+此时生成的“booting.img”镜像，只是一个内核和虚拟磁盘的打包，是无法真正启动一块板子的。  
+
+## 6.制作根文件系统rootfs  
 
 
 
