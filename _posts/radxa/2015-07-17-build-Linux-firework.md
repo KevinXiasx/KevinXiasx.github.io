@@ -7,7 +7,7 @@ keywords: radxa
 description: 
 ---
 
-# 制作Linux系统的固件
+# 1.制作Linux系统的固件
 
 本篇文章将详细介绍如何制作Rock lite/pro上运行的Linux固件，你需要的，就是一台能上网的Ubuntu的电脑  
 
@@ -32,7 +32,7 @@ description:
   
   **需要注意的是，上面CROSS_COMPILE是表示编译器的路经，make的时候，会从该路经寻找编译器，可能需要改变，因为也许你已经安装过該编译器，或者说你想使用你其他编译器，这时候，就需要特别注意该变量的值。**  
   
-## 获取Linux内核源码  
+## 2.获取Linux内核源码  
 
 * Kernel v3.0:
 `git clone -b radxa-stable-3.0 https://github.com/radxa/linux-rockchip.git`  
