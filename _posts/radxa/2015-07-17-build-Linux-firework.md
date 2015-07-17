@@ -7,11 +7,11 @@ keywords: radxa
 description: 
 ---
 
-# 1.制作Linux系统的固件
+# 制作Linux系统的固件
 
 本篇文章将详细介绍如何制作Rock lite/pro上运行的Linux固件，你需要的，就是一台能上网的Ubuntu的电脑  
 
-## 编译环境  
+## 1.编译环境  
 
 #### 下载交叉编译工具链  
 
@@ -46,4 +46,41 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
   获取配置文件  
   `wget http://rockchip.fr/radxa/linux/rockchip_defconfig -O`  
   `wget http://rockchip.fr/radxa/linux/rk3188-radxarock.dts -O arch/arm/boot/dts/rk3188-radxarock.dts`  
+
+## 3.编译内核  
+
+* 进入内核根目录内  
+  `cd linux-rockchip`  
+* 如果你的板子是2014版的pro或者lite，那么请使用adxa_rock_pro_linux_defconfig  
+  `make radxa_rock_pro_linux_defconfig`  
+* 如果你的板子是2013版的pro或者lite，那么请使用 use radxa_rock_linux_defconfig  
+  `make radxa_rock_linux_defconfig`  
+* 开始编译  
+  `make -j8`  
+
+生成的内核镜像文件位置是在 arch/arm/boot/Image。  
+
+## 4.编译内核模块  
+
+  `mkdir modules`  
+  `export INSTALL_MOD_PATH=./modules`  
+  `make modules && make modules_install`  
+  `cd ..`  
+  
+现在所以的内核模块都在 modules/lib/modules/3.0.36+/文件夹中。待会儿在制作文件系统的时候需要用到。  
+
+## 5.制作booting.img镜像  
+
+* 获取虚拟磁盘镜像  
+  `git clone https://github.com/radxa/initrd.git`  
+  `cd initrd`  
+  `find . ! -path "./.git*"  | cpio -H newc  -ov > initrd.img`  
+  此时，在当前文件夹下，就会生成一个initrd.img的文件  
+  
+获取打包工具mkbooting  
+`wget  http://dl.radxa.com/rock/tools/linux/mkbootimg`  
+`sudo apt-get install lib32stdc++6`  
+`hmod +x mkbootimg`  
+
+
 
