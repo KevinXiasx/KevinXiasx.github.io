@@ -15,10 +15,13 @@ description:
 ## 配置环境  
 
 * 设置系统的安装库来源  
+
 	备份apt的源配置文件  
 	`sudo cp /etc/apt/sources.list /etc/apt/sources.list.backup`  
+	
 	查看该文件可以看到类似这么几行，如果没有，请加上它，并且保证它不是被注释的信息  
-	> deb http://us.archive.ubuntu.com/ubuntu/ saucy universe restricted multiverse  
+
+	> deb http://us.archive.ubuntu.com/ubuntu/ saucy universe restricted multiverse <  
 	> deb-src http://us.archive.ubuntu.com/ubuntu/ saucy universe  restricted multiverse  
 	> deb http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe  restricted multiverse  
 	> deb-src http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe restricted multiverse  
@@ -26,15 +29,19 @@ description:
 	重点在于后面三个条件 universe restricted multiverse，补全他们  
 
 * 设置环境变量  
+
 	`sudo update-locale LANG=C LANGUAGE=C LC_ALL=C LC_MESSAGES=POSIX`  
 
 * 增加来源  
+
 	`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'`  
 
 * 设置锁  
+ 
 	`wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -`  
 
 * 更新设置  
+
 	`sudo apt-get updata`  
 
 ## 安装ROS Jade  
@@ -75,7 +82,7 @@ rosinstall是经常被使用的命令行工具，它能让你使用一行命令�
 
 最后我们还需要一个设置，因为ROS不能识别Linaro的系统，所以我们需要更改/etc/lsb-release文件中的系统信息，只需要把Linaro改成Ubuntu就好，其他不用变，类似下面这样子  
 	
-	>DISTRIB_ID=Ubuntu  
-	>DISTRIB_RELEASE=14.04  
-	>DISTRIB_CODENAME=trusty  
-	>DISTRIB_DESCRIPTION="Ubuntu 14.04"  
+	> DISTRIB_ID=Ubuntu  
+	> DISTRIB_RELEASE=14.04  
+	> DISTRIB_CODENAME=trusty  
+	> DISTRIB_DESCRIPTION="Ubuntu 14.04"  
