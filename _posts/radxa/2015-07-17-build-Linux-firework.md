@@ -1,8 +1,10 @@
 ---
 layout: post
-title: 2013.08.12 工程板发布
+title: Linux系统固件制作
 category: 产品
 tags: [产品]
 keywords: radxa
 description: 
 ---
+
+# 制作Linux系统的固件
