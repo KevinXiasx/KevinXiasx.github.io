@@ -8,8 +8,8 @@ description:
 ---
 
 
-# ROS Jade在Ubuntu Trusty armhf的安装  
-	本文将介绍如何在Ubuntu系统中安装ROS系统，其他关于ROS的介绍和教程请登录[ROSwiki](http://wiki.ros.org/)  
+# ROS Jade在Ubuntu的Rock2上的安装 
+	本文将介绍如何在Rock2的Ubuntu系统安装ROS系统，其他关于ROS的介绍和教程请登录[ROSwiki](http://wiki.ros.org/)  
 
 ## 配置环境  
 
