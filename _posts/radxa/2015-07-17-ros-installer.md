@@ -21,7 +21,7 @@ description:
 	
 	查看该文件可以看到类似这么几行，如果没有，请加上它，并且保证它不是被注释的信息  
 
-	> deb http://us.archive.ubuntu.com/ubuntu/ saucy universe restricted multiverse <  
+	> deb http://us.archive.ubuntu.com/ubuntu/ saucy universe restricted multiverse   
 	> deb-src http://us.archive.ubuntu.com/ubuntu/ saucy universe  restricted multiverse  
 	> deb http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe  restricted multiverse  
 	> deb-src http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe restricted multiverse  
