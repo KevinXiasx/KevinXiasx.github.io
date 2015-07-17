@@ -38,9 +38,9 @@ description:
 `git clone -b radxa-stable-3.0 https://github.com/radxa/linux-rockchip.git`  
 * kernel v3.18:
 https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz  
-同时还要获取配置文件  
-`wget http://rockchip.fr/radxa/linux/rockchip_defconfig -O arch/arm/configs/rockchip_defconfig`  
-`wget http://rockchip.fr/radxa/linux/rk3188-radxarock.dts -O arch/arm/boot/dts/rk3188-radxarock.dts`  
+  同时还要获取配置文件  
+  `wget http://rockchip.fr/radxa/linux/rockchip_defconfig -O arch/arm/configs/rockchip_defconfig`  
+  `wget http://rockchip.fr/radxa/linux/rk3188-radxarock.dts -O arch/arm/boot/dts/rk3188-radxarock.dts`  
 
 * Kernel v4.0:`git clone -b stable --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git`  
   获取配置文件  
@@ -51,10 +51,11 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
 
 * 进入内核根目录内  
   `cd linux-rockchip`  
-* 如果你的板子是2014版的pro或者lite，那么请使用adxa_rock_pro_linux_defconfig  
+* 如果你的板子是2014版的pro或者lite，那么请使用radxa_rock_pro_linux_defconfig  
   `make radxa_rock_pro_linux_defconfig`  
-* 如果你的板子是2013版的pro或者lite，那么请使用 use radxa_rock_linux_defconfig  
+* 如果你的板子是2013版的pro或者lite，那么请使用radxa_rock_linux_defconfig  
   `make radxa_rock_linux_defconfig`  
+    **所有的配置文件都保存在/arch/arm/configs/目录下，你可以根据需要，修改配置文件，或者使用我们推荐的配置文件**  
 * 开始编译  
   `make -j8`  
 
@@ -89,6 +90,52 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
 此时生成的“booting.img”镜像，只是一个内核和虚拟磁盘的打包，是无法真正启动一块板子的。  
 
 ## 6.制作根文件系统rootfs  
+  
+* 首先选择下载一个根文件系统  
+  http://releases.linaro.org/  
+  
+* 然后申请一块和下载的文件系统大小略多的空间  
+  `dd if=/dev/zero of=rootfs.img bs=1M count=256`  
 
+* 为这个文件系统分区命名为linuxroot  
+  `mkfs.ext4 -F rootfs.img -L linuxroot`  
+  （该名字被使用在内核开启时寻找文件系统使用，我们在使用upgrade_tool时，也可以只烧录文件系统，使用该分区名，如:
+  `upgrade_tool di linuxroot rootfs.img`）  
+
+* 把这个分区文件挂载到/mnt下  
+   mount -o loop rootfs.img /mnt  
+
+* 解压linaro的tar gz rootfs的所有内容到/mnt下，即不要带有解压包名字的文件夹。bin、tmp等文件夹应在PC的mnt文件夹下。  
+  
+* 然后取消挂载  
+  `umount /mnt`  
+
+这样，就制作好了一个Linux文件系统。  
+
+## 6.完成固件制作的最后一步  
+
+获取打包工具  
+`git clone https://github.com/radxa/rockchip-pack-tools.git`  
+  
+文件夹下会得到一个package-file的文件  
+  *{
+	# NAME			Relative path
+	#HWDEF		HWDEF
+	package-file		package-file
+	bootloader		RK3188Loader(L)_V2.19.bin
+	parameter		parameter
+	boot     			Linux/boot-linux.img
+	linuxroot			Linux/rootfs.img
+	backup			RESERVED
+	update-script		update-script
+	recover-script	recover-script
+  }*
+
+  里面列出了一个完整的updata.img所需要的全部组件。  
+  
+其中，下划线的部分，是我们刚刚制作好的booting.img，以及文件系统rootfs。其他部分在该文件夹下都已提供。你可以选择把package-file文件中的相应部分改成你制作的文件名字，或把你制作的文件名字改成和package-file中一致，且路径相同，然后执行 该目录下的一个脚本  
+  `./mkupdate.sh `  
+  
+即得到可烧录的updata.img镜像。  
 
 
