@@ -25,8 +25,7 @@ description:
   
 或者在这里下载http://dl.radxa.com/rock/source/x86_32_arm-eabi-4.6.zip  
 
-##### 如果打算制作3.18及以上内核，则需要下面的编译器  
-	`sudo apt-get install git build-essential gcc-arm-linux-gnueabihf lzop libncurses5-dev libssl-dev bc`  
+
 
 #### 设置环境变量  
 
@@ -39,16 +38,7 @@ description:
 
 * Kernel v3.0:
 `git clone -b radxa-stable-3.0 https://github.com/radxa/linux-rockchip.git`  
-* kernel v3.18:
-https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz  
-  同时还要获取配置文件  
-  `wget http://rockchip.fr/radxa/linux/rockchip_defconfig -O arch/arm/configs/rockchip_defconfig`  
-  `wget http://rockchip.fr/radxa/linux/rk3188-radxarock.dts -O arch/arm/boot/dts/rk3188-radxarock.dts`  
 
-* Kernel v4.0:`git clone -b stable --depth 1 git://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git`  
-  获取配置文件  
-  `wget http://rockchip.fr/radxa/linux/rockchip_defconfig -O`  
-  `wget http://rockchip.fr/radxa/linux/rk3188-radxarock.dts -O arch/arm/boot/dts/rk3188-radxarock.dts`  
 
 ## 3.编译内核  
 
