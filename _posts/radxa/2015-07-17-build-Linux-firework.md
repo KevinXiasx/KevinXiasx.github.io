@@ -121,7 +121,7 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
   *{  
 	# NAME			Relative path  
 	#HWDEF		HWDEF  
-	package-file		package-file  
+	package-file		package-file*  
 	bootloader		RK3188Loader(L)_V2.19.bin  
 	**parameter		parameter**  
 	**boot     			Linux/boot-linux.img**  
@@ -129,7 +129,7 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
 	backup			RESERVED  
 	update-script		update-script  
 	recover-script	recover-script  
-  }
+  }*
 
   里面列出了一个完整的updata.img所需要的全部组件。  
   
