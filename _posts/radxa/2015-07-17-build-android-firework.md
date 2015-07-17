@@ -29,8 +29,8 @@ keywords: firework
 下面两步需要注意，arm是将要编译的目标平台，配置时，会根据此环境变量去arch/$ARCH/configs中寻找配置文件，如果编译时报错，有时会提示找不到配置文件，你需要检查该环境变量是否错误，或者说，该目录下是否有相对应的配置文件。  
 arm-linux-gnueabihf-则是编译器名字的前面部分，有时你的电脑中已经有该交叉编译工具，但是不在环境变量中，你需要在该环境变量中加入路径名，如CROSS_COMPILE=/user/local/arm-linux-gnueabihf-。  
 
-	`export ARCH=arm`  
-	`export CROSS_COMPILE=arm-linux-gnueabihf-`  
+`export ARCH=arm`  
+`export CROSS_COMPILE=arm-linux-gnueabihf-`  
 	
 * 安装其他所需要的运行库  
 	`sudo apt-get install libssl1.0.0 libssl-dev`  
@@ -73,13 +73,13 @@ arm-linux-gnueabihf-则是编译器名字的前面部分，有时你的电脑中
 	http://cn.radxa.com/forum.php					中文论坛  
 * 另外，本手册所使用的所有源码、固件、工具，都可以登陆以下地址下载  
 	http://dl.radxa.com/                             	      国外服务器  
-	http://pan.baidu.com/share/home?uk=3108273493#category/type=0
-												 百度云  
+	http://pan.baidu.com/share/home?uk=3108273493#category/type=0	百度云  
 * 手册内容经小编实际操作，均可正常使用，但因系统以及整理文档等原因，若出现错误，请谅解，并使用以下邮箱联系我们  
 	kevin@radxa.com  
 
 ## Radxa团队  
-#### 2015年7月  
+
+### 2015年7月  
 --------------------------------------------------------------------
 
 
