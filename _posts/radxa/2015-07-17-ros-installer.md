@@ -63,14 +63,14 @@ description:
 
 在使用ROS之前，你将需要安装和初始化rosdep。当你安装运行新的ROS组件时，这个工具能够	帮助你方便地建立依赖软件依赖关系。  
 
-	sudo apt-get install python-rosdep  
-	sudo rosdep init  
-	rosdep update  
+	`sudo apt-get install python-rosdep`  
+	`sudo rosdep init`  
+	`rosdep update`  
 
 ## 软件环境变量  
 
-	echo "source /opt/ros/jade/setup.bash" >> ~/.bashrc  
-	source ~/.bashrc  
+	`echo "source /opt/ros/jade/setup.bash" >> ~/.bashrc`  
+	`source ~/.bashrc`  
 
 ## 获取rosinstall
 
@@ -81,7 +81,7 @@ rosinstall是经常被使用的命令行工具，它能让你使用一行命令�
 ## 最后设置
 
 最后我们还需要一个设置，因为ROS不能识别Linaro的系统，所以我们需要更改/etc/lsb-release文件中的系统信息，只需要把Linaro改成Ubuntu就好，其他不用变，类似下面这样子  
-	
+
 	> DISTRIB_ID=Ubuntu  
 	> DISTRIB_RELEASE=14.04  
 	> DISTRIB_CODENAME=trusty  
