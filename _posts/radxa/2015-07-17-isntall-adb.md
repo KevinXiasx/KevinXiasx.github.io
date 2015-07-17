@@ -1,12 +1,47 @@
 ---
 layout: page
-title: ROS在Ubuntu系统下的安装
+title: 使用ADB调试android Rock
 category: 产品
 tags: [产品, 配置]
 keywords: 产品, 配置
-description: 
+description:
 ---
 
+# 使用ADB调试android Rock  
+
+我们首先需要一个
+* 运行android平台的rock  
+* PC机  
+* USB转OTG线  
+
+## Linux  
+
+* 我们首先要安装adb工具  
+	`sudo apt-get install android-tools-adb`  
+
+* 然后修改udev规则文件，填入以下内容  
+	`sudo gedit /etc/udev/rules.d/51-android.rules`  
+	> SUBSYSTEM=="usb", ATTR{idVendor}=="2207", MODE="0666", GROUP="plugdev"  
+
+* 现在我们需要让之前的设置马上生效  
+	`sudo udevadm control --reload-rules`  
+	`sudo udevadm trigger`  
+
+* 如果.android文件夹没有存在你的home目录下的话，我们需要创建它，然后在里面添加一个文件  
+	`mkidr -p ~/.android`  
+	`echo 0x2207 >> ~/.android/adb_usb.ini`  
+
+* 然后确认你的android设备开启了debugging的选项  
+
+* 重启一次adb工具  
+	`sudo adb kill-server`  
+	`sudo adb start-server`  
+
+* 现在，我们使用以下命令就可以看到类似这样的一些连接信息  
+	`sudo adb devices`  
+	`16EM8TBH0Z  device` 
+
+连接成功 ！ 
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  
