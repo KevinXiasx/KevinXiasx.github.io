@@ -55,9 +55,9 @@ description:
 
 在使用ROS之前，你将需要安装和初始化rosdep。当你安装运行新的ROS组件时，这个工具能够	帮助你方便地建立依赖软件依赖关系。  
 
-	`sudo apt-get install python-rosdep`  
-	`sudo rosdep init`  
-	`rosdep update`  
+	sudo apt-get install python-rosdep  
+	sudo rosdep init  
+	rosdep update  
 
 ## 软件环境变量  
 
