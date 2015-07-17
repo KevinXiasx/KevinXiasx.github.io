@@ -21,6 +21,7 @@ description:
 	> deb-src http://us.archive.ubuntu.com/ubuntu/ saucy universe  restricted multiverse  
 	> deb http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe  restricted multiverse  
 	> deb-src http://us.archive.ubuntu.com/ubuntu/ saucy-updates universe restricted multiverse  
+
 	重点在于后面三个条件 universe restricted multiverse，补全他们  
 
 * 设置环境变量  
@@ -60,14 +61,14 @@ description:
 
 ## 软件环境变量  
 
-	`echo "source /opt/ros/jade/setup.bash" >> ~/.bashrc`  
-	`source ~/.bashrc`  
+	echo "source /opt/ros/jade/setup.bash" >> ~/.bashrc  
+	source ~/.bashrc  
 
 ## 获取rosinstall
 
 rosinstall是经常被使用的命令行工具，它能让你使用一行命令就下载好组件，使用下面命令安装  
 
-	`sudo apt-get install python-rosinstall`  
+	sudo apt-get install python-rosinstall  
 
 ## 最后设置
 
