@@ -27,14 +27,14 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
   `wget http://rockchip.fr/radxa/linux/rockchip_defconfig -O`  
   `wget http://rockchip.fr/radxa/linux/rk3188-radxarock.dts -O arch/arm/boot/dts/rk3188-radxarock.dts`  
 
-##编译内核  
+## 3.编译内核  
 
 `export ARCH=arm`  
 `export CROSS_COMPILE=arm-linux-gnueabihf-`  
 
 上面的CROSS_COMPILE变量是指gcc编译器的路径名，可能需要根据具体情况修改  
 
-## 创建boot镜像  
+## 4.创建boot镜像  
 
 * 如果你没有mkbootimg工具的话，按照下面的方式下载，如果有的话，则跳过  
 	`git clone https://github.com/neo-technologies/rockchip-mkbootimg.git`  
