@@ -118,22 +118,22 @@ https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.11.tar.xz
 `git clone https://github.com/radxa/rockchip-pack-tools.git`  
   
 文件夹下会得到一个package-file的文件  
-  *{
-	# NAME			Relative path
-	#HWDEF		HWDEF
-	package-file		package-file
-	bootloader		RK3188Loader(L)_V2.19.bin
-	parameter		parameter
-	boot     			Linux/boot-linux.img
-	linuxroot			Linux/rootfs.img
-	backup			RESERVED
-	update-script		update-script
-	recover-script	recover-script
+  *{  
+	# NAME			Relative path  
+	#HWDEF		HWDEF  
+	package-file		package-file  
+	bootloader		RK3188Loader(L)_V2.19.bin  
+	**parameter		parameter**  
+	**boot     			Linux/boot-linux.img**  
+	linuxroot			Linux/rootfs.img  
+	backup			RESERVED  
+	update-script		update-script  
+	recover-script	recover-script  
   }*
 
   里面列出了一个完整的updata.img所需要的全部组件。  
   
-其中，下划线的部分，是我们刚刚制作好的booting.img，以及文件系统rootfs。其他部分在该文件夹下都已提供。你可以选择把package-file文件中的相应部分改成你制作的文件名字，或把你制作的文件名字改成和package-file中一致，且路径相同，然后执行 该目录下的一个脚本  
+其中，加粗的部分，是我们刚刚制作好的booting.img，以及文件系统rootfs。其他部分在该文件夹下都已提供。你可以选择把package-file文件中的相应部分改成你制作的文件名字，或把你制作的文件名字改成和package-file中一致，且路径相同，然后执行 该目录下的一个脚本  
   `./mkupdate.sh `  
   
 即得到可烧录的updata.img镜像。  
