@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ROS在Ubuntu系统下的安装
+title: 编译3.18及以上Linux内核
 category: 产品
 tags: [产品, 配置]
 keywords: 产品, 配置
