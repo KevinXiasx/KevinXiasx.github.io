@@ -51,6 +51,58 @@ description:
 
 ##### 1.使用工具RK_DriverAssitant tools安装  
 
+	此时不需要连上rockchip的设备。直接下载[RK_DriverAssitant](RK_DriverAssitant)  
+	然后解压、打开.exe格式的文件  
+	如下图，点击install Driver即可安装。如果你不能确定你之前是否曾经安装过，则先点击Uninstall Driver,再安装  
+	![u](http://radxa.com/mw/images/b/ba/RK_Driver_Assistant_Install_Uninstall.jpg)  
+	
+	接着如下图所示，点击Install driver。由于Windows的版本不同，可能需要你进行两次这个操作。  
+	![image](http://radxa.com/mw/images/e/e6/RK_Driver_Assistant_Windows_Security.jpg)  
+	
+	然后可以启动你的设备了。
+	
+	**Windows XP在操作上有一些不一样，你需要参考压缩包中的readme，然后进行操作。**  
+	
+##### 2.手动安装驱动  
+
+	下载驱动（http://dl.radxa.com/rock/tools/windows/radxa_adb_driver.zip ），然后解压开。  
+	启动你的rock，并且连接上电脑  
+	当系统提示“找到新设备”的时候，根据提示找到驱动位置，系统会完成安装  
+	
+### 安装android SDK  
+
+* 在Windows下安装adb，通常的做法是安装有google公司提供的android SDK。而SDK的管理需要JDK的支持。所以下载[JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html),并把它安装好。  
+
+* 然后下载[SDK](http://dl.google.com/android/android-sdk_r22.3-windows.zip),并把它解压到C盘下，像这样 C：\android-sdk-windows。  
+
+* 安装SDK时，首先选“Android SDK tools" ,然后是”Android sdk platform",接着是“install packages"，sdk就会被下载，被安装到"C：\android-sdk-windows\platform-tools"  
+
+### 设置环境  
+
+* 右键”我的电脑“  
+
+### 设置USB ID  
+
+* 打开windows的终端cmd，输入以下命令  
+	`cd c:\android-sdk-windows`    **此处是你的安装目录**  
+	`mkdir .android`  
+
+* 进入我们刚刚创建的文件夹下，创建一个新的文件，名字为“adb_usb.ini",然后打开它，在里面输入以下内容，然后保存  
+	> 0x2207  
+
+* 然后开始测试adb  
+	`cd c:\android-sdk-windows\platform-tools`  
+	`adb kill-server`  
+	`adb devices`  
+
+	然后你应该会看到类似下面的信息  
+	> List of devices attached  
+	> 16EM8P26M8      device  
+	
+完成！
+
+
+
 -------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  
 	http://radxa.com  						官方网站  
