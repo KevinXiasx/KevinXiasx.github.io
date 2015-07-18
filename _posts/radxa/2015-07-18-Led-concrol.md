@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 往SD卡中载入启动镜像
+title: LED灯的控制
 category: 产品
 tags: [产品]
 keywords: radxa
