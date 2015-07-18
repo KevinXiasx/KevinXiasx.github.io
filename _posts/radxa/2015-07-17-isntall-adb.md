@@ -9,7 +9,7 @@ description:
 
 # 使用ADB调试android Rock  
 
-我们首先需要一个
+我们首先需要
 * 运行android平台的rock  
 * PC机  
 * USB转OTG线  
@@ -54,14 +54,16 @@ description:
 	此时不需要连上rockchip的设备。直接下载[RK_DriverAssitant](RK_DriverAssitant)  
 	然后解压、打开.exe格式的文件  
 	如下图，点击install Driver即可安装。如果你不能确定你之前是否曾经安装过，则先点击Uninstall Driver,再安装  
-	![u](http://radxa.com/mw/images/b/ba/RK_Driver_Assistant_Install_Uninstall.jpg)  
+	
+![u](http://radxa.com/mw/images/b/ba/RK_Driver_Assistant_Install_Uninstall.jpg)  
 	
 	接着如下图所示，点击Install driver。由于Windows的版本不同，可能需要你进行两次这个操作。  
-	![image](http://radxa.com/mw/images/e/e6/RK_Driver_Assistant_Windows_Security.jpg)  
+	
+![image](http://radxa.com/mw/images/e/e6/RK_Driver_Assistant_Windows_Security.jpg)  
 	
 	然后可以启动你的设备了。
 	
-	**Windows XP在操作上有一些不一样，你需要参考压缩包中的readme，然后进行操作。**  
+**Windows XP在操作上有一些不一样，你需要参考压缩包中的readme，然后进行操作。**  
 	
 ##### 2.手动安装驱动  
 
