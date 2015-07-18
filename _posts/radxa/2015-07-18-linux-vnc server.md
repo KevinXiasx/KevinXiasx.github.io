@@ -9,7 +9,7 @@ description:
 
 ## 设置VNC服务器  
 
-你可以通过设定VNC（Virtual Network Computing）服务器从网络上远程进入你的radxa rock桌面.  
+你可以通过设定VNC（Virtu Network Computing）服务器从网络上远程进入你的radxa rock桌面.  
 
 * 如果你还没有在你的rock板上安装VNC服务器，需要用下面的命令安装它（前提是你的板子能连接网络）：  
 	`sudo apt-get install tightvncserver`  
@@ -17,12 +17,15 @@ description:
 * 第一次运行时设定密码：  
 	`root@radxa:~# vncserver`  
 
-* 你需要设定一个进入桌面的密码：  
+* 你需要设定一个进入桌面的密码：并且再次确认它  
 
-> Password:                                                         #(input your password here)  
+> Password: *****
 > Warning: password truncated to the length of 8.                                 
-> Verify:                                                                  #(repeat the password)        
-> Would you like to enter a view-only password (y/n)? n                           #(input n here)  
+> Verify: *****    
+
+* 询问你是否要设置一个查询密码时，选择n  
+
+> Would you like to enter a view-only password (y/n)? n 
 > xauth:  file /root/.Xauthority does not exist                                   
 > New 'X' desktop is radxa:1       
 > Creating default startup script /root/.vnc/xstartup                             
@@ -45,7 +48,7 @@ description:
 	`root@radxa:~# vncserver -kill :1`  
 	`root@radxa:~# vncserver -geometry 1280x800 :1`  
 
-现在Rock板子上运行的VNC服务器桌面分辨率是1280x800的。
+现在Rock板子上运行的VNC服务器桌面分辨率是1280x800的。  
 
 ## 远程桌面
 
