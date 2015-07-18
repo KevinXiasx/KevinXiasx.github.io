@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 往SD卡中载入启动镜像
+title: 设置VNC服务器 
 category: 产品
 tags: [产品]
 keywords: radxa
 description: 
 ---
 
-## 设置VNC服务器  
+## 设置VNC服务器 
 
 你可以通过设定VNC（Virtu Network Computing）服务器从网络上远程进入你的radxa rock桌面.  
 
