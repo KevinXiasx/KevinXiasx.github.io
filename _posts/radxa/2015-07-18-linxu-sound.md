@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 往SD卡中载入启动镜像
+title: Linux 声音设置 
 category: 产品
 tags: [产品]
 keywords: radxa
 description: 
 ---
 
-# Linux 声音设置  
+# Linux 声音设置 
 
 ## HDMI/AV 输出音频  
 
