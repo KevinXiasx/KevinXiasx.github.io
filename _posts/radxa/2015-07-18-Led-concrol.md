@@ -10,10 +10,10 @@ description:
 # 控制Radxa Rock上的LED灯  
 
 Radxa Rock上有三个LED灯  
-	* LED        GPIOref    GPIO number  
-	* 绿灯  --  GPIO0——B4  --  172  
-	* 蓝灯  --  GPIO0——B6  --  174  
-	* 红灯  --  GPIO0——B7  --  175  
+	* LED   --   GPIOref  --  GPIO number  
+	* 绿灯  --  GPIO0_B4  --  172  
+	* 蓝灯  --  GPIO0_B6  --  174  
+	* 红灯  --  GPIO0_B7  --  175  
 
 我们可以控制他们通过/sys/class/leds下的文件  
 
