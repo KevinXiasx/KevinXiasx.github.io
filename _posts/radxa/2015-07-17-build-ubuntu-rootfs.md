@@ -49,6 +49,33 @@ description:
 
 * 我们建议你进行一项操作，就是增加一个开机脚本，让你可以增加一些开机启动的程序  
 	`vim /usr/local/bin/mtd-by-name.sh`  
+
+加入下列文本  
+*{
+   #!/bin/sh -e
+   # mtd-by-name link the mtdblock to name
+   # radxa.com, thanks to naobsd
+   rm -rf /dev/block/mtd/by-name/
+   mkdir -p /dev/block/mtd/by-name
+   for i in `ls -d /sys/class/mtd/mtd*[0-9]`; do
+       name=`cat $i/name`
+       tmp="`echo $i | sed -e 's/mtd/mtdblock/g'`"	
+       dev="`echo $tmp |sed -e 's/\/sys\/class\/mtdblock/\/dev/g'`"
+       ln -s $dev /dev/block/mtd/by-name/$name
+   done
+}*  
+
+* 在/etc/rc.local文件 “exit 0”前加入下面文字  
+> /usr/local/bin/mtd-by-name.sh  
+
+* 回到PC系统  
+	`exit`  
+	`sync`  
+	`sudo umount /mnt`  
+
+然后在继续Linux固件制作的步骤！  
+
+
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  
 	http://radxa.com  						官方网站  
