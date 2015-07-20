@@ -15,7 +15,7 @@ description:
 
 但是实际上，它也不是真的成了一块转头。我们在拯救机器的时候，首先确认没有SD卡插在卡槽中，不然bootloader在这个时候会被破坏。这样，我们就总能恢复rock。  
 
-## 怎样恢复设备   
+## 怎样恢复设备（in windows)     
 
 * 关掉电源  
 * 把nand的8P和9P短接（使用导电物体连接两个引脚），并且把板子用OTG-USB线连接上PC机。  
@@ -27,6 +27,27 @@ description:
 
 * 你可以使用放大镜或者变焦相机来帮助你完成短接这个步骤  
 * 针脚的计数开始位置是芯片上有个小圆圈的一侧  
+
+## In linux  
+
+同样的操作对板子，连接OTG-USB线之后，使用upgrade_tool工具，会显示类似下面的信息  
+
+> sudo upgrade_tool  
+   List of rockusb connected  
+   No found rockusb,Rescan press <R>,Quit press :r  
+   List of rockusb connected  
+   DevNo=1	Vid=0x2207,Pid=0x310b,LocationID=21f	   **Maskrom**  
+   Found 1 rockusb,Select input DevNo,Rescan press <R>,Quit press :1  
+   Rockusb>uf /tmp/radxa-rock-alip-desktop.img  
+   Loading firmware...  
+
+当你看见Maskrom(更多时候显示‘Loader’），那就意味着你成功短接了Rock的引脚  
+
+
+=
+=
+=
+=
 
 
 --------------------------------------------------------------------
