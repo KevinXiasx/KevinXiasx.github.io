@@ -9,8 +9,47 @@ description:
 
 # 从SD卡中向NAND引导镜像  
 
-**Rockchip提供了完成这一任务的工具，但是目前只支持用于烧录Android的镜像。**
+**Rockchip提供了在windows下完成这一任务的工具，但是目前只支持用于烧录Android的镜像。Linux下需要做更多的工作**
 
+
+## WINDOWS  
+### 准备设备  
+
+* 一张至少4G的SD卡  
+* 一个SD读卡器  
+* windows系统的PC  
+
+### 先去下载一个升级的镜像文件  
+
+记住，是android的镜像，你可以从这里下载http://radxa.com  
+
+### 制作一个用于升级的SD卡  
+
+* 下载工具，并借解压它http://dl.radxa.com/rock/tools/windows/SD_Firmware_Tool.zip  
+* SD卡插入读卡器，读卡器连接到电脑上  
+* 在广告下载的工具文件夹中，寻找一个“SD_Firewware_Tool.exe"的文件，然后打开它  
+* 在”choose removable disk"项中，选择你广告插入的SD卡  
+* 勾选"upgrade Fireware"  
+* 选择你想要烧录的镜像文件  
+* 最后点击”create“按钮。当完成时，会有弹窗提示你。
+![image](http://radxa.com/mw/images/b/bd/Upgrade_disk_1.jpg)  
+
+### 用SD卡升级Rock  
+
+* 把rock关机  
+* 插入SD卡  
+* 启动rock，接着程序运行，你会看见如下的界面  
+	![image](http://radxa.com/mw/images/0/0d/Upgrade_disk_2.jpg)  
+* 等待初始华结束，这个过程也许会持续几分钟，当升级成功后，你会看见下面的界面  
+	![image](http://radxa.com/mw/images/7/73/Upgrade_disk_3.jpg)  
+* 关闭rock，移除SD卡  
+* 启动rock，现在系统就是新载入的版本了  
+
+
+## Linux  
+
+在Linux操作环境下，你先要往SD卡中载入一个sdboot-header.img，下载地址 http://files.androtab.info/radxa/sdboot.tgz 。  
+接着
 
 
 
