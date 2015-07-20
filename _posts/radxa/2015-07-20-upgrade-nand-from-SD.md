@@ -1,12 +1,15 @@
 ---
 layout: post
-title: 往SD卡中载入启动镜像
+title: 从SD卡中向NAND引导镜像  
 category: 产品
 tags: [产品]
 keywords: radxa
 description: 
 ---
 
+# 从SD卡中向NAND引导镜像  
+
+**Rockchip提供了完成这一任务的工具，但是目前只支持用于烧录Android的镜像。**
 
 
 
