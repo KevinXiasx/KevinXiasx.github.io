@@ -26,7 +26,7 @@ description:
 
 ### adb主机中，对android设备进行截图  
 
-只需要执行以下命令就可以
+只需要执行以下命令就可以  
 	`adb shell  "cat /dev/graphics/fb0 > /sdcard/fb.raw"`  
 	`adb pull /sdcard/fb.raw`  
 	`ffmpeg -vcodec rawvideo -f rawvideo -pix_fmt rgb32 -s 1920x1080  -i fb.raw -f image2 -vcodec png fb-%d.png`  

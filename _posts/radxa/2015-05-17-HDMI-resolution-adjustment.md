@@ -8,17 +8,10 @@ description: 如何调整HDMI分辨率？
 ---
 
 说明： 
-1）如果显示器有输出，并且很清晰，只是上下边缘没有显示全
-     
-- ROCK2 square
-请先参考 http://cn.radxa.com/forum.php?mo ... &extra=page%3D1
 
-- Rock pro & Rock lite
-     请参考http://radxa.com/Rock/display
+1）目前这种方法适用于rock2 square, rock pro 和 rock lite
 
-2）目前这种方法适用于rock square, rock pro 和 rock lite
-
-3）方法适用于Android 和 rabian 
+2）方法适用于Android 和 rabian 
 
 第一步：获取显示器的edid参数 （目前只找到windows下的工具）
 
@@ -130,6 +123,7 @@ Android 系统：
   参考：
   
   -  http://cn.radxa.com/forum.php?mod=viewthread&tid=303&extra=page%3D1
+<<<<<<< HEAD
 
 
 
@@ -155,3 +149,5 @@ Android 系统：
 --------------------------------------------------------------------
 
 
+=======
+>>>>>>> 0f5e364b66f0ab6ed04fe6799e937fb6c29c26fa

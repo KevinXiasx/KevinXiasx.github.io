@@ -33,7 +33,10 @@ description:
 从 http://dl.radxa.com/rock/images/ubuntu/partitions/ 下载最新的boot-linux.img，并烧写到 “recovery”分区。  
 从 http://dl.radxa.com/rock/images/ubuntu/partitions/ 下载最新的rootfs，烧写到SD卡/U盘/移动硬盘的“first partition”  
 从 http://dl.radxa.com/rock/images/android/BootUbuntu.apk 下载并安装用于从Android引导到linux的应用程序。  
-  
+ =
+
+ =
+ 
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  
