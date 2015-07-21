@@ -15,7 +15,7 @@ description:
 * 在NAND flash上用于双启动的boot镜像可以从下面的网址得到：  
    http://dl.radxa.com/rock/images/dual_boot/  
 
-* 下载之后，按照 rock/flash_the_image/zh cn 烧写。 
+* 下载之后，按照 http://radxa.com/Rock/flash_the_image 烧写。 
 
 ## 在SD卡、U盘/移动硬盘上的双启动  
 
