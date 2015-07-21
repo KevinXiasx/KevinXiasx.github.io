@@ -19,7 +19,7 @@ description:
 
 * 增加一个数组  
 
-  > static struct rkxx_remote_key_table remote_key_table_41C8[] = {  
+  > 		static struct rkxx_remote_key_table remote_key_table_41C8[] = {  
 	               {0x38, KEY_VOLUMEUP},  
 	               {0xb8, KEY_VOLUMEDOWN},  
 	               {0x58, KEY_MENU},  
@@ -39,7 +39,7 @@ description:
 
 * 增加一项,这里的每一项对应一种遥控器  
 
->  static struct rkxx_remotectl_button remotectl_button[]  
+>  	static struct rkxx_remotectl_button remotectl_button[]  
    For example：  
       {  
           .usercode = 0x41c8, /* 用户码 */  
