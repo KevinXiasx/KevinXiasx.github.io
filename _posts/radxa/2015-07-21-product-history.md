@@ -18,7 +18,7 @@ description:
 ![](http://radxa.com/mw/images/thumb/a/ad/Rock_es_front.png/1000px-Rock_es_front.png)
 
 =
-=
+
 =
 
 
@@ -38,7 +38,7 @@ description:
 
 
 =
-=
+
 =
 
 #  2014-06-10,Rock Pro 发布
@@ -97,7 +97,7 @@ description:
 1. http://radxa.com/Rock/hardware_revision
 
 =
-=
+
 =
 
 #  2014-06-10,Rock lite 发布  
@@ -159,9 +159,9 @@ A9构架的开源四核开发板，搭载了国内首款采用28nm工艺瑞芯�
 
 
 =
+
 =
-=
-=
+
 
 # Oct 11, 2014 要开始进入Rock2的时代了  
 
@@ -197,7 +197,9 @@ Bring up：
 
 参考：
 
-- http://radxa.com/Rock2/full_bb
+- http://radxa.com/Rock2/full_bb  
+
+
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  
 	http://radxa.com  						官方网站  

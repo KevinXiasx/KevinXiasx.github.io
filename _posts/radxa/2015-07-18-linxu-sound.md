@@ -17,20 +17,20 @@ description:
 
 * 会输出以下信息：  
 
-	> speaker-test 1.0.25  
-	> Playback device is default  
-	> Stream parameters are 48000Hz, S16_LE, 2 channels  
-	> WAV file(s)  
-	> Rate set to 48000Hz (requested 48000Hz)  
-	> Buffer size range from 48 to 32768  
-	> Period size range from 16 to 3072  
-	> Using max buffer size 32768  
-	> Periods = 4  
-	> was set period_size = 2979  
-	> was set buffer_size = 32768  
-	> 0 - Front Left  
-	> 1 - Front Right  
-	> Time per period = 2.061311  
+> speaker-test 1.0.25  
+  Playback device is default  
+  Stream parameters are 48000Hz, S16_LE, 2 channels  
+  WAV file(s)  
+  Rate set to 48000Hz (requested 48000Hz)  
+  Buffer size range from 48 to 32768  
+  Period size range from 16 to 3072  
+  Using max buffer size 32768  
+  Periods = 4  
+  was set period_size = 2979  
+  was set buffer_size = 32768  
+  0 - Front Left  
+  1 - Front Right  
+  Time per period = 2.061311  
 
 * 此时你会从HDMI或者使用耳机（插在AV输出端子上）听到声音。  
 
@@ -38,15 +38,15 @@ description:
 
 如果你设置成默认从SPDIF输出音频的话，可以创建 /etc/asound.conf 并增加以下内容：  
 
-  > pcm.!default {  
-  >      type hw  
-  >      card 1  
-  >      device 0  
-  > }  
-  > ctl.!default {  
-  >      type hw  
-  >      card 1  
-  >  }  
+> pcm.!default {  
+     type hw  
+     card 1  
+     device 0  
+}  
+ctl.!default {  
+     type hw  
+     card 1  
+ }  
 
 ## 在Rock上使用 USB DAC 的 Squeezelite  
 
@@ -67,6 +67,9 @@ description:
 
 然而不幸的是我没办法让它连续工作24小时这么长。现在主要在监测一些爆破音，并想方设法去获取这些爆破音。如果你有好的想法请告诉我。
 
+=
+
+=
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  

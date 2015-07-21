@@ -65,6 +65,9 @@ arm-linux-gnueabihf-则是编译器名字的前面部分，有时你的电脑中
 
 最后，你会在rockdev/Image文件夹下得到boot.img recovery.img system.img分区镜像文件, 和 rockdev文件夹下的 update.img整个固件.  
 
+=
+
+=
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  

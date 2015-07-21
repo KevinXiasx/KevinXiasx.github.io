@@ -20,29 +20,29 @@ description:
 * 你需要设定一个进入桌面的密码：并且再次确认它  
 
 > Password: *****
-> Warning: password truncated to the length of 8.                                 
-> Verify: *****    
+  Warning: password truncated to the length of 8.                                 
+  Verify: *****    
 
 * 询问你是否要设置一个查询密码时，选择n  
 
 > Would you like to enter a view-only password (y/n)? n 
-> xauth:  file /root/.Xauthority does not exist                                   
-> New 'X' desktop is radxa:1       
-> Creating default startup script /root/.vnc/xstartup                             
-> Starting applications specified in /root/.vnc/xstartup                          
-> Log file is /root/.vnc/radxa:1.log  
+  xauth:  file /root/.Xauthority does not exist                                   
+  New 'X' desktop is radxa:1       
+  Creating default startup script /root/.vnc/xstartup                             
+  Starting applications specified in /root/.vnc/xstartup                          
+  Log file is /root/.vnc/radxa:1.log  
 
 * 现在编辑 ~/.vnc/xstartup 文件，并在 x-window-manager 后面添加一行，就像：  
 
 > \#!/bin/sh 
-> xrdb $HOME/.Xresources  
-> xsetroot -solid grey  
-> \#x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &  
-> \#x-window-manager &  
-> startlubuntu &  
-> \# Fix to make GNOME work  
-> export XKL_XMODMAP_DISABLE=1  
-> /etc/X11/Xsession  
+  xrdb $HOME/.Xresources  
+  xsetroot -solid grey  
+  \#x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &  
+  \#x-window-manager &  
+  startlubuntu &  
+  \# Fix to make GNOME work  
+  export XKL_XMODMAP_DISABLE=1  
+  /etc/X11/Xsession  
 
 * 现在重启VNC服务：  
 	`root@radxa:~# vncserver -kill :1`  
@@ -88,6 +88,9 @@ Server: 你的Radxa Rock板子的IP地址，后面加上":1"，比如 192.168.1.
 
 ![VNCConfig-2.jpg](http://radxa.com/mw/images/f/fd/VNCConfig-2.jpg)  
 
+=
+
+=
 
 
 --------------------------------------------------------------------
