@@ -53,24 +53,24 @@ description:
 
 修改的地方在对应的函数 remotectl_do_something 中
 
->   case RMC_USERCODE:  
-    {  
-        ddata->scanData <<= 1;  
-        ddata->count ++;  
-        if ((TIME_BIT1_MIN < ddata->period) && (ddata->period < TIME_BIT1_MAX)){  
-            ddata->scanData |= 0x01;  
-        }  
-        if (ddata->count == 0x10){//16 bit user code  
-            // printk("u=0x%x\n",((ddata->scanData)&0xFFFF));  
-            if (remotectl_keybdNum_lookup(ddata)){  
-                ddata->state = RMC_GETDATA;  
-                ddata->scanData = 0;  
-                ddata->count = 0;  
-            }else{  
-               ddata->state = RMC_PRELOAD;  
-            }  
-        }  
-    }  
+>   	case RMC_USERCODE:  
+	    {  
+	        ddata->scanData <<= 1;  
+	        ddata->count ++;  
+	        if ((TIME_BIT1_MIN < ddata->period) && (ddata->period < TIME_BIT1_MAX)){  
+	            ddata->scanData |= 0x01;  
+	        }  
+	        if (ddata->count == 0x10){//16 bit user code  
+	            // printk("u=0x%x\n",((ddata->scanData)&0xFFFF));  
+	            if (remotectl_keybdNum_lookup(ddata)){  
+	                ddata->state = RMC_GETDATA;  
+	                ddata->scanData = 0;  
+	                ddata->count = 0;  
+	            }else{  
+	               ddata->state = RMC_PRELOAD;  
+	            }  
+	        }  
+	    }  
 
 放开注释的printk的代码,可以得到用户码,接下来在第二步 remotectl_button array我们添加的数组中填上对应的按键个数,  放开下面代码中的printk代码, 得到键值  
 
@@ -91,7 +91,7 @@ description:
 	                                     ...  
 	                                   }  
 	                                ...  
-								}  
+				}  
 	                   }  
 
 注意:  
