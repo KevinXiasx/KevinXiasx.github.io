@@ -1,12 +1,13 @@
 ---
 layout: post
-title: 将image烧写到NAND
-category: 入门必看
+title: 将image烧写到NAND（Windows）
+category: Rock入门
 tags: [入门, Flash, image, NAND]
 keywords: image,NAND
 description: 
 ---
->这篇文章描述了如何在Radxa Rock的nand flash上安装镜像，比如，如何烧写开发板。你可以选择烧写整个nand镜像（比如update.img）到开发板或者仅仅烧写选定的分区。你可以从我们的服务器下载prebuilt镜像或者编译你自己的镜像。
+
+>这篇文章描述了windows平台下，如何在Radxa Rock的nand flash上安装镜像，比如，如何烧写开发板。你可以选择烧写整个nand镜像（比如update.img）到开发板或者仅仅烧写选定的分区。你可以从我们的服务器下载prebuilt镜像或者编译你自己的镜像。
 
 ##  在你开始之前
 
@@ -24,7 +25,7 @@ description:
 
 ## windows平台
 
-烧写镜像的Windows工具由Rockchip提供。为了烧写[update.img](http://radxa.com/Rock/update.img)（你最好点击链接然后读这个页面，这对初学者很重要），你需要使用RKBath Tool然后烧写到分区，你需要使用RKDevelop Tool。RKBath Tool和RKDevelop Tool依赖于RK USB驱动，所以你需要首先安装一下：
+烧写镜像的Windows工具由Rockchip提供。为了烧写update.img，你需要使用RKBath Tool然后烧写到分区，你需要使用RKDevelop Tool。RKBath Tool和RKDevelop Tool依赖于RK USB驱动，所以你需要首先安装一下：
 
 ### 安装驱动
 
@@ -165,16 +166,10 @@ RKBatchTool    - 单击 “Restore”按钮格式化，然后烧写镜像。
 
 1）USB线供电不足，此时建议更换质量好的USB线 或者在进入刷机模式后插上电源
 
-2 ) bootloader 版本不同导致，如果你之前刷的固件的bootloader版本是高版本，然后刷回低版本的固件，那么你可能会遇到这个问题。板子这是“变砖”了。。。按照这个 http://wiki.radxa.com/Rock/unbrick 解决它。
-
-参考：
-
-1. http://radxa.com/Rock/flash_the_image
+2 ) bootloader 版本不同导致，如果你之前刷的固件的bootloader版本是高版本，然后刷回低版本的固件，那么你可能会遇到这个问题。板子这是“变砖”了。。。按照这个 [解砖](/2015/07/20/umbrick-rock.html) 解决它。
 
 
-=
 
-=
 
 
 --------------------------------------------------------------------
