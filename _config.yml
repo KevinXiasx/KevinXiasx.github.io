@@ -7,19 +7,19 @@ kramdown:
 
 # 作者信息
 author: 
-  name: 夏顺新
-  email: xxiiaass@sina.com
-  weibo: http://weibo.com/xxiiaass
-  github: http://github.com/KevinXiasx
+  name: 瑞莎科技-Radxa
+  email: 
+  weibo: 
+  github: http://github.com/radxa
 
 # 站点信息
-title: Kevin学习记录 
-description: 学习记录
+title: Rock文档
+description: 文档资料
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: http://imgsrc.baidu.com/forum/w%3D580/sign=b0847c3fd00735fa91f04eb1ae500f9f/3eb69e39b6003af3211b0244312ac65c1138b6d2.jpg
-favicon: http://www.jianbihua.cc/uploads/allimg/140216/2-1402161Q401S6.jpg
+avatar: http://dl.radxa.com/media/logo/RADXA_X_135x135.png
+favicon: 
 
 # google analytics 设置
 ga:
