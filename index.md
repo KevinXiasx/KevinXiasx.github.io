@@ -3,17 +3,21 @@ layout: post
 title: Welcome to Radxa
 ---
 
-# 入门-新手
+# 新手入门
 
 如果你是刚接触Radxa Rock的朋友，建议先看一看下面的几篇文档，我相信，会很有帮助的。
+
+* [也许你应该会想要知道，你手上的是一个什么好东西](/2014/12/29/products.html)
 
 * [先要确定你的开发板是哪个版本](/2015/07/21/product-history.html)  
 
 * [如何获取可刷机的镜像](/2015/07/21/tiro-read.html)  
 
-* [windows往板子中刷入第一个系统]
+* [windows往板子中刷入第一个系统](/2014/12/28/Flash-image-to-nand-windows.html)
 
-* [Linux往板子中刷入第一个系统]
+* [Linux往板子中刷入第一个系统](/2014/12/28/Flash-image-to-nand-linux.html)
+
+* 新手使用时，总会有这个那个毛病，你可以先看看这有没有你需要的答案-[传送门](/2014/12/29/Q-and-A.html)-
 
 # Android开发请看
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 通过 GPIO 控制 Radxa 的 LED
-category: 进阶必阅
+category: 硬件操作
 tags: [GPIO]
 keywords: GPIIO
 description: 
@@ -97,10 +97,6 @@ sudo vim rootfs/etc/rc.local
 
 
 
- =
-
- =
- 
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  

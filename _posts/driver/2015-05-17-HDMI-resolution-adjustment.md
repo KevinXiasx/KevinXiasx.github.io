@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HDMI分辨率调整
-category: 进阶必阅
+category: 硬件操作
 tags: [HDMI]
 keywords: HDMI
 description: 如何调整HDMI分辨率？
@@ -120,17 +120,9 @@ Android 系统：
   [3]: http://images.cnitblog.com/blog/152134/201301/30192346-393776216326489c8e66f39234d086dd.jpg
   [4]: http://cn.radxa.com/data/attachment/forum/201504/29/113412ip45ya4b01ps1abn.png
   
-  参考：
-  
-  -  http://cn.radxa.com/forum.php?mod=viewthread&tid=303&extra=page%3D1
-<<<<<<< HEAD
 
 
 
- =
-
- =
- 
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  

@@ -1,11 +1,12 @@
 ---
 layout: page
 title: radxa系列产品的比较
-category: 产品
+category: 硬件信息
 tags: [产品, 配置]
 keywords: 产品, 配置
 description: 
 ---
+
 >随着产品的发布和更新，radxa产品越来越多。看看它们的区别吧。
 
 
@@ -37,9 +38,13 @@ description:
 - 其余和Rock保持一致
 
 
- =
+## Rock pro与Rock lite的区别：
 
- =
+- lite内存减小了到1GB
+
+- lite除掉了蓝牙模块
+
+- lite除去了nand存储，统一使用SD卡
  
 
 --------------------------------------------------------------------

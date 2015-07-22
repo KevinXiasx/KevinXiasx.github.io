@@ -1,38 +1,45 @@
 ---
 layout: post
 title: 关于显示
-category: 入门必看
+category: 硬件操作
 tags: [显示, display, 分辨率, 资源]
 keywords: redxa,rock，display
 description: 
 ---
->关于显示
+
+##关于显示
 
 Radxa Rock- RK3188有两个LCD控制器，LCD0和LCD1。在RR上，LCD1连接HDMI，LCD0连接AV输出，LCD0的信号也可以在扩展口上输出。
 
-有一些sysfs接口会输出控制显示相关的东西。下吗的应该可以在Android和Linux都运行很好。
+有一些sysfs接口会输出控制显示相关的东西。**下面代码应该可以在Android和Linux都运行很好**
 
 ## 设置显示比例 
 
-```
+设置一个变量，方便操作  
+
   root@radxa:# export SCALE=/sys/class/graphics/fb0/scale
-   #For the new Ubuntu 14.04 image, the path is changed to /sys/class/display/HDMI/scale, run
+
+对于新的Ubuntu系统，你需要使用下面的名面替代上面那条  
+
    root@radxa:# export SCALE=/sys/class/display/HDMI/scale
-   root@radxa:# cat $SCALE
+
+查看当前的设置  
+   root@radxa:# cat $SCALE  
    xscale=95 yscale=95
+
+改变设置  
    root@radxa:# echo 100 > $SCALE
    root@radxa:# cat $SCALE
    xscale=100 yscale=100
-```
+
 
 你也可以为X和Y设置不同的比例：
 
-```
-   root@radxa:# echo xscale=80 > $SCALE
-   root@radxa:# echo yscale=100 > $SCALE
-   root@radxa:# cat $SCALE
-   xscale=80 yscale=100
-```
+   root@radxa:# echo xscale=80 > $SCALE  
+   root@radxa:# echo yscale=100 > $SCALE  
+   root@radxa:# cat $SCALE  
+   xscale=80 yscale=100  
+
 
 ## 设置HDMI输出模式 
 
@@ -168,10 +175,7 @@ fbset -a -xres 1280 -yres  720 -vxres 1280 -vyres  720
 fbset -a -xres 1920 -yres 1080 -vxres 1920 -vyres 1080
 ```
 
- =
 
- =
- 
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  
