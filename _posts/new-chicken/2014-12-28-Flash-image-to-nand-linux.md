@@ -45,7 +45,7 @@ description:
 
 [1]:/2014/12/31/enter-recovery-mode.html  
 
-[2]:dl.radxa.com/rock/tools/linux/Linux_Upgrade_Tool_v1.21.zip
+[2]:http://dl.radxa.com/rock/tools/linux/Linux_Upgrade_Tool_v1.21.zip
 
 
 --------------------------------------------------------------------
