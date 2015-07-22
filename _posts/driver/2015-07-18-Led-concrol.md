@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 控制Radxa Rock上的LED灯  
-category: 进阶必阅
+category: 硬件操作
 tags: [产品]
 keywords: radxa
 description: 

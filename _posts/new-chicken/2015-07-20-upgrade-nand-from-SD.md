@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 从SD卡中向NAND引导镜像  
-category: 进阶必阅
+category: rock入门
 tags: [镜像，SD卡]
 keywords: radxa
 description: 

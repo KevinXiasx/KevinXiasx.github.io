@@ -88,9 +88,8 @@ Server: 你的Radxa Rock板子的IP地址，后面加上":1"，比如 192.168.1.
 
 ![VNCConfig-2.jpg](http://radxa.com/mw/images/f/fd/VNCConfig-2.jpg)  
 
-=
 
-=
+
 
 
 --------------------------------------------------------------------

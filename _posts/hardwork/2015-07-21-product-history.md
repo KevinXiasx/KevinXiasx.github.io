@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 历史发布信息
-category: 产品
+category: 硬件信息
 tags: [产品]
 keywords: radxa
 description: 

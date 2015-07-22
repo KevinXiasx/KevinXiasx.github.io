@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rock变砖了怎么办
-category: 进阶必阅
+category: rock入门
 tags: [砖机]
 keywords: radxa
 description: 

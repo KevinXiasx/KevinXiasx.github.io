@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 使用板子上的红外
-category: 进阶必阅
+category: 硬件操作
 tags: [红外]
 keywords: 产品, 配置
 description:

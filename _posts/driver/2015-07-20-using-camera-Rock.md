@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用rock上的无线设备  
-category: 进阶必阅
+category: 硬件操作
 tags: 
 keywords: radxa
 description: 
