@@ -18,6 +18,6 @@ title: Welcome to Radxa
 #Linux开发请看  
 
 
-[1](/2015/07/21/product-history.html)  
-[2]()  
-[3](
+[1]:/2015/07/21/product-history.html
+[2]:  
+[3]:
