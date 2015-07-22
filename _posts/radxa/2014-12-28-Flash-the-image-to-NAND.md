@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 将image烧写到NAND
-category: 入门
+category: 入门必看
 tags: [入门, Flash, image, NAND]
 keywords: image,NAND
 description: 

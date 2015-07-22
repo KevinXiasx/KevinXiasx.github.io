@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何调试
-category: 入门
+category: 入门必看
 tags: [调试]
 keywords: 调试
 description: 

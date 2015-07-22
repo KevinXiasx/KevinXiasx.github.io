@@ -1,0 +1,97 @@
+<hr />
+
+<p>layout: post
+title: 新手必看
+category: 入门必看
+tags: [入门, Flash, image, NAND]
+keywords: image,NAND</p>
+
+<h2>description: </h2>
+
+<p>update.img 是rockchip定义的用于刷机的格式，它可以通过rockchip batch tool工具导入nand中。你可以下载完整的update.img在这里http://dl.radxa.com</p>
+
+<p><strong>注意：不一样版本的硬件，不能使用同一份镜像文件，否则会导致不能启动或者没有视频输出</strong></p>
+
+<h2>如何去下载争取的镜像</h2>
+
+<ul>
+<li><p>首先确认你的板子是什么版本，可以参考这个（http://radxa.com/Rock/hardware_revision）</p></li>
+<li><p>所有的镜像都可以从这里下载http://dl.radxa.com/</p></li>
+<li><p>不一样的板子，你需要到各自的文件夹下寻找镜像。例如，你的板子是rock pro，那么你应该进入类似rock_pro/images/&hellip;</p></li>
+<li><p>镜像的命名是有规律的，你可以通过分析文件名判断是否是你所需要的镜像。例如：</p></li>
+</ul>
+
+
+<blockquote><p>  radxa_rock_android_kitkat_r2_140911_sdcard.zip<br/>
+    radxa_rock  : 硬件的名字<br/>
+    android   ：  固件的OS<br/>
+    kitkat   ：固件所特有的别名，android4.4<br/>
+    r2      ： 发布版本<br/>
+    140911  ：发布日期<br/>
+    sdcard  : 说明镜像是准备用来从SD卡启动的，没有这个名字，则是从nand。</p></blockquote>
+
+<h2>创建镜像</h2>
+
+<h4>Windows</h4>
+
+<p>rockchip提供了windows下创建镜像的工具，叫做AFPTool.exe和 RKImageMaker.exe 。你可以在dl.radxa.com上的tools文件下找到这些工具</p>
+
+<p>这些工具是根据一个叫package-file的文件来打包的，文件里面包含了需要打包的各部分的信息</p>
+
+<blockquote><p>  # NAME      Relative path<br/>
+    #<br/>
+    #HWDEF      HWDEF<br/>
+    package-file    package-file<br/>
+    bootloader  RK3188Loader(L)_V1.24.bin<br/>
+    parameter   parameter<br/>
+    misc        Image/misc.img<br/>
+    kernel  Image/kernel.img<br/>
+    boot        Image/boot.img<br/>
+    recovery    Image/recovery.img<br/>
+    system  Image/system.img<br/>
+    backup          RESERVED<br/>
+    update-script   update-script<br/>
+    recover-script  recover-script</p></blockquote>
+
+<h2>Linux</h2>
+
+<p>linux下的打包工具，可以通过github获取，你可以仔细阅读获取文件下的README来了解更准确更详细的信息</p>
+
+<pre><code>`git clone https://github.com/radxa/rockchip-pack-tools.git`  
+</code></pre>
+
+<p>打包内核和文件系统的脚本getimage.sh，已经mkupdate.sh用来打包整个固件，你可以仔细阅读他们的语句，看看都做了些什么工作</p>
+
+<h2>mkbootimg工具</h2>
+
+<p>mkbootimg工具是用来打包镜像的工具，获取源码<br/>
+    <code>git clone https://github.com/neo-technologies/rockchip-mkbootimg.git</code></p>
+
+<p>进入文件夹开始编译<br/>
+    <code>cd rockchip-mkbootimg</code><br/>
+    <code>make</code></p>
+
+<p>这里只是简单介绍了一个打包制作一个镜像的模式，具体详细步骤，可以参考http://radxa.com 中的详细介绍。</p>
+
+<h1>=</h1>
+
+<hr />
+
+<ul>
+<li>如果需要更详细更全面的信息，请登陆<br/>
+  http://radxa.com                        官方网站<br/>
+  339567728                               QQ讨论群<br/>
+  http://cn.radxa.com/forum.php                   中文论坛</li>
+<li>另外，本手册所使用的所有源码、固件、工具，都可以登陆以下地址下载<br/>
+  http://dl.radxa.com/                                      国外服务器<br/>
+  http://pan.baidu.com/share/home?uk=3108273493#category/type=0   百度云</li>
+<li>手册内容经小编实际操作，均可正常使用，但因系统以及整理文档等原因，若出现错误，请谅解，并使用以下邮箱联系我们<br/>
+  kevin@radxa.com</li>
+</ul>
+
+
+<h2>Radxa团队</h2>
+
+<h3>2015年7月</h3>
+
+<hr />

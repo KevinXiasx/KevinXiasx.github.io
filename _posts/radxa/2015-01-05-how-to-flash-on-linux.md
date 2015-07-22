@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux 下如何刷机
-category: 入门
+category: 入门必看
 tags: [刷机]
 keywords: 刷机
 description: 

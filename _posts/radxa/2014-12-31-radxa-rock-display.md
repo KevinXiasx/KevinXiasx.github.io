@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 关于显示
-category: 入门
+category: 入门必看
 tags: [显示, display, 分辨率, 资源]
 keywords: redxa,rock，display
 description: 

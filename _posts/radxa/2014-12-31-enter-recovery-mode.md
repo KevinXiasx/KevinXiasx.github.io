@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何进入recovery 模式
-category: 入门
+category: 入门必看
 tags: [recovery,模式]
 keywords: redxa,rock，recovery,模式
 description: 
