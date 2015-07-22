@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Radxa Rock Lite的详细介绍
-category: 产品
+category: 硬件信息
 tags: [rock,radxa,lite]
 keywords: redxa,rock,lite
 description: 

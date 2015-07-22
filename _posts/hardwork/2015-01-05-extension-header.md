@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Radxa Rock(pro/lite)的扩展接口
-category: 硬件配置
+category: 硬件信息
 tags: [产品, 接口]
 keywords: 接口,配置
 description: 

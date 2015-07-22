@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Radxa Rock Pro的硬件配置
-category: 硬件配置
+category: 硬件信息
 tags: [产品, 配置]
 keywords: 产品, 配置
 description: 
