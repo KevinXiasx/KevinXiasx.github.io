@@ -1,18 +1,19 @@
-### 我的博客
+### 本手册链接
 
-地址：[http://yansu.org](http://yansu.org)
+地址：[http://kevinxiasx.github.io](http://kevinxiasx.github.io)
 
-### 安装说明
+--------------------------------------------------------------------
+* 如果需要更详细更全面的信息，请登陆  
+	http://radxa.com  						官方网站  
+	339567728         						QQ讨论群  
+	http://cn.radxa.com/forum.php					中文论坛  
+* 另外，本手册所使用的所有源码、固件、工具，都可以登陆以下地址下载  
+	http://dl.radxa.com/                             	      国外服务器  
+	http://pan.baidu.com/share/home?uk=3108273493#category/type=0    百度云  
+* 手册内容经小编实际操作，均可正常使用，但因系统以及整理文档等原因，若出现错误，请谅解，并使用以下邮箱联系我们  
+	kevin@radxa.com  
 
-1. fork库到自己的github
-2. 修改名字为：`username.github.io`
-3. clone库到本地，参考`_posts`中的目录结构自己创建适合自己的文章目录结构
-4. 修改CNAME，或者删掉这个文件，使用默认域名
-5. 修改`_config.yml`配置项
-6. It's done!
+## Radxa团队  
 
-### 分支说明
-
-- 三栏布局（master分支，基于[3-Jekyll](https://github.com/P233/3-Jekyll)）
-- 三栏布局 (bootstrap-based分支，基于Bootstrap)
-- 单栏布局（first-ui分支，基于Bootstrap）
+### 2015年7月  
+--------------------------------------------------------------------
