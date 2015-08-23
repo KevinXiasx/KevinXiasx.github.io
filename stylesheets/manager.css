@@ -1,0 +1,20 @@
+#textareaid{
+	width: 440px;
+	max-width: 600px;
+	min-width: 600px;
+	height: 100px;
+	max-height: 100px;
+	min-height: 100px
+}
+.msgshow{
+	width: 60%;
+	height: 300px;
+	background-color: white;
+	overflow: auto;
+}
+
+.leftspace{
+	width: 20%;
+	height: 10px;
+	float: left;
+}
