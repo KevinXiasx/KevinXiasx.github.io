@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ShowTime</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/showtime.css">
+</head>
+<body id="bodyid" >
+	<div class="div_head_class" >
+		<p><h1 class="h1_class" align="center">SHOWTIME</h1></p>
+	</div>
+	<div class="div_menu_class" >
+		<div class="div_menu_1_class" align="right"><input id="headbutton1_id" type="button"  value="Learning English" /></div>
+		<div class="div_menu_2_class" align="center"><input id="headbutton2_id" type="button" value="Photo Show" /></div>
+		<div class="div_menu_3_class" align="left"><input id="headbutton3_id"type="button" value="Learning Code" /></div>
+	</div>
+	<div class="idv_maintext_class">
+		<div id="maintext_id" align="center"><p>I think, this Web is useful for conmunicate between us !</p><p align="center"></span>2015-08-19, by KevinXia</p></div>
+	</div>
+	<script type="text/javascript">
+		var textline = "<p>hello</P>";
+		document.body.appendChild(textline);
+
+	</script>
+
+	<script type="text/javascript">
+		function buttonclick () {
+			var newcolor;
+			var object=event.srcElement;
+			if( object.value == document.getElementById('headbutton3_id').value )
+				newcolor = "#CD00CD";
+			else if( object.value == document.getElementById('headbutton1_id').value)
+				newcolor = "#A4D3EE";
+			else if(object.value == document.getElementById('headbutton2_id').value)
+				newcolor = "#00EE00";
+			document.getElementById('bodyid').style.backgroundColor= newcolor;
+		}
+		var allbutton = document.querySelectorAll('input');
+		for (var i = 0; i< allbutton.length; i++) {
+			allbutton[i].onclick = buttonclick;
+		};
+	</script>
+</body>
+</html>

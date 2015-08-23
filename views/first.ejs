@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>-- X --</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/mycss.css">
+</head>
+<body bgcolor="#CDC9C9">
+	<h2 align="center"><b>Radxa</b> </h2>
+
+	<div id="helloid" align="center">
+		<p> Hello , please input id and password</p>
+	</div>
+	<div align="center">
+		<form action="/" method="post" onsubmit="return checkfunc();" id="checkformid" name="checkform">
+			<p>ID: 
+			<input type="text" id="idinput" maxlength="10" size="15" name="userid" /></p>
+			<p>PW
+			<input type="password" id="pwinput" maxlength="10" size="15" name="userpw" /></p>
+			<p><input type="submit" value="Submit" /></p>
+			<p><input type="button" value="sendmsg" id="sendid" /></p>
+			<% if ( err ) { %>
+				<p id="errid"><%=errmsg%></p>
+			<% }%> 
+		</form>
+	</div>
+	<script type="text/javascript">
+	function checkfunc () {
+			if(document.forms[0].elements[0].value == "" || document.checkform.userpw.value == ""){
+				window.alert("empty is illgeal");
+				return false;
+			}
+			else
+			{
+				document.forms[0].submit();
+				return true;
+			}
+		}
+
+	</script>
+
+	<script type="text/javascript" src="/javascript/socket.io.js"></script>
+
+	<script type="text/javascript">
+		var sock = io.connect();
+		var button = document.getElementById('sendid');
+		button.onclick = function(){
+		 sock.emit('foo', 'hello');
+	};
+		sock.on('msg', function (data) {
+			document.getElementById('idinput').value = data;
+			/*var li = document.createElement('li');
+			li.innerHTML = '<p>'+data+'</p>' ;*/
+		});
+	</script>
+</body>
+</html>

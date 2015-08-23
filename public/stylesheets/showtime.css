@@ -1,0 +1,65 @@
+#bodyid{
+	margin: 0px;
+	font-family: sans-serif;
+	background-color: #FFFFBB;
+}
+
+.h1_class{
+	color: red;
+	font: Andale Mono;
+	font-size: 70px;
+}
+.div_head_class{
+	height: 200px;
+	width: 100%;
+	background-color: ;
+
+}
+.div_menu_class{
+	height: 200px;
+	width: 100%;
+	background-color: ;
+}
+
+
+/* menu layout css*/
+.div_menu_1_class{
+	width: 40%;
+	float: left;
+	font-size: 30px;
+}
+.div_menu_2_class{
+	width: 20%;
+	float: left;
+	font-size: 30px;
+}
+.div_menu_3_class{
+	width: 40%;
+	float: left;
+	font-size: 30px;
+}
+
+/* menu button css*/
+#headbutton1_id,#headbutton2_id,#headbutton3_id{
+	height: 70px;
+	width: %20;
+	font-size: 30px;
+	box-shadow: none;
+	border:0px;
+	outline:none;
+}
+#headbutton1_id{
+	background-color: #A4D3EE;
+}
+#headbutton2_id{
+	background-color: #00EE00;
+}
+#headbutton3_id{
+	background-color: #CD00CD;
+
+}
+/* test css*/
+.idv_maintext_class{
+	height: 200px;
+	font-size: 25px;
+}
