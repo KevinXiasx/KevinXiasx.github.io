@@ -1244,3 +1244,8 @@ pre > code {
   color: #2aa198; }
 
 /* Literal.Number.Integer.Long */
+
+#contact{
+  background-color: #ccc;
+  overflow: hidden;
+}
