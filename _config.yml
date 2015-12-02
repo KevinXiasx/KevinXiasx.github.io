@@ -1,0 +1,31 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+pygments: true
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author: 
+  name: 瑞莎科技-Radxa
+  email: support@radxa.com
+  weibo: weibo.com/radxa
+  github: http://github.com/radxa
+
+# 站点信息
+title: Rock文档
+description: 文档资料
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: http://dl.radxa.com/media/logo/RADXA_X_135x135.png
+favicon: 
+
+# google analytics 设置
+ga:
+  id: UA-54767140-1
+  url: docs.radxa.us
+
+# disqus 设置
+disqus:
+  shortname: radxa-doc
