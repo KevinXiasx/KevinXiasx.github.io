@@ -16,12 +16,12 @@ description:
 #### 下载交叉编译工具链  
 
 ##### 64bit 主机  
-  `git clone -b kitkat-release --depth  https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
+  `git clone -b kitkat-release --depth=1  https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
   
 或者这里下载http://dl.radxa.com/rock/source/x86_64_arm-eabi-4.6.zip   
 
 ##### 32bit 主机  
-  `git clone -b jb-release --depth 1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
+  `git clone -b jb-release --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
   
 或者在这里下载http://dl.radxa.com/rock/source/x86_32_arm-eabi-4.6.zip  
 
