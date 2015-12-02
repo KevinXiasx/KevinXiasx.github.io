@@ -1246,5 +1246,6 @@ pre > code {
 /* Literal.Number.Integer.Long */
 
 #contact{
-  background-color: #cccccc;
+  border: 2px solid black;
+  border-radius: 5px;
 }
