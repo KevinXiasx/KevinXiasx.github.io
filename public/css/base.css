@@ -69,9 +69,3 @@ a:hover {text-decoration:none;}
 }
 /* 显示评论按钮 */
 .show-commend {width: 100%; margin-bottom: 40px;}
-pre{
-  font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
-}
-h1,h2,h3,h4{
-  font-style: bold;
-}
