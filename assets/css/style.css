@@ -449,7 +449,7 @@ iframe {
       height: 260px; } }
 
 #post__toc-trigger {
-  width: 300px;
+  width: 280px;
   padding-left: 40px;
   position: fixed;
   top: 64px;
@@ -467,11 +467,11 @@ iframe {
   -o-transition: -o-transform .35s ease-in-out .1s;
   transition: transform .35s ease-in-out .1s; }
   #post__toc-trigger:hover {
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-    transform: translateX(0); }
+    -webkit-transform: translateX(-50);
+    -moz-transform: translateX(-50);
+    -ms-transform: translateX(-50);
+    -o-transform: translateX(-50);
+    transform: translateX(-50); }
   @media screen and (max-device-width: 1280px) {
     #post__toc-trigger {
       display: none; } }
