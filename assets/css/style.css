@@ -467,11 +467,11 @@ iframe {
   -o-transition: -o-transform .35s ease-in-out .1s;
   transition: transform .35s ease-in-out .1s; }
   #post__toc-trigger:hover {
-    -webkit-transform: translateX(-50);
-    -moz-transform: translateX(-50);
-    -ms-transform: translateX(-50);
-    -o-transform: translateX(-50);
-    transform: translateX(-50); }
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    transform: translateX(-50px); }
   @media screen and (max-device-width: 1280px) {
     #post__toc-trigger {
       display: none; } }
